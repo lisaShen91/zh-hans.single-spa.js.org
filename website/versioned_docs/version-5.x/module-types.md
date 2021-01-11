@@ -10,7 +10,7 @@ Single-spa有[不同类别](/docs/microfrontends-concept/#types-of-microfrontend
 
 这是每个single-spa概念上的工作方式，这些信息有助于你理解我们的[建议](/docs/recommended-setup/#applications-versus-parcels-versus-utility-modules)。
 
-<<<<<<< HEAD
+
 | 主题                | 应用程序                       | 沙箱                              | 公共模块                              |
 | -------------------- | --------------------------------- | ------------------------------------ | ------------------------------------ |
 | 路由              | 有多个路由              | 无路由                         | 无路由                        |
@@ -18,15 +18,7 @@ Single-spa有[不同类别](/docs/microfrontends-concept/#types-of-microfrontend
 | 渲染UI          | 渲染UI                       | 渲染UI                           | 不直接渲染UI          |
 | 生命周期           | single-spa管理生命周期     | 自定义管理生命周期            | 没有生命周期                        |
 | 什么时候使用          | 核心构建模块              | 仅在多个框架中需要 | 共享通用逻辑时使用         |
-=======
-| Topic                | Application                       | Parcel                               | Utility                                           |
-| -------------------- | --------------------------------- | ------------------------------------ | ------------------------------------------------- |
-| Routing              | has multiple routes               | has no routes                        | has no routes                                     |
-| API                  | declarative API                   | imperative API                       | exports a public interface                        |
-| Renders UI           | renders UI                        | renders UI                           | may or may not render UI                          |
-| Lifecycles           | single-spa managed lifecycles     | custom managed lifecycles            | external module: no direct single-spa lifecycles  |
-| When to use          | core building block               | only needed with multiple frameworks | useful to share common logic, or create a service |
->>>>>>> 11795bae2c1dd3a1852d98d9662468a8c138d50d
+
 
 每个微前端都是一个浏览器内的JavaScript模块([说明](/docs/recommended-setup#in-browser-versus-build-time-modules)).
 
